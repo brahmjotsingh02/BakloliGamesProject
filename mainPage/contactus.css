@@ -1,0 +1,72 @@
+body {
+    background-color: #282828;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: "Permanent Marker", cursive;
+}
+
+#heading {
+    text-align: center;
+    font-size: 3em;
+    margin: 40px 0;
+
+}
+
+#bodyContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+
+
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    color: black;
+    width: 70%;
+    padding: 20px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(250, 235, 215, 0.3);
+}
+
+#card:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+
+@media(max-width: 500px) {
+    #heading {
+        font-size: 2.4em;
+    }
+
+    #content {
+        font-size: 0.8em;
+    }
+}
+
+@media(max-width: 420px) {
+    #heading {
+        font-size: 2.1em;
+    }
+
+    #content {
+        font-size: 0.6em;
+    }
+}
+
+@media(max-width: 320px) {
+    #heading {
+        font-size: 1.8em;
+    }
+
+    #content {
+        font-size: 0.5em;
+    }
+}

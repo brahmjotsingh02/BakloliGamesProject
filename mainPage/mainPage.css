@@ -1,0 +1,112 @@
+body {
+    background-color: #282828;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: "Permanent Marker", cursive;
+}
+
+
+#heading {
+    text-align: center;
+    font-size: 50px;
+    margin: 40px 0;
+
+}
+
+#gameLists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+#ticTacToe {
+    width: 300px;
+    height: auto;
+    box-shadow: 0 0 20px rgba(255, 160, 122, 0.1);
+    background-color: rgb(255, 160, 122);
+    border-radius: 10px;
+    margin: 10px 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+#ticTacToeImage {
+    width: 100%;
+    max-width: 190px;
+    height: auto;
+    border: 2px solid red;
+    margin: 20px auto 5px auto;
+    border-radius: 10px;
+}
+
+#ticTacToeLabel {
+    font-weight: bolder;
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: black;
+}
+
+
+#ticTacToeButton {
+    display: inline-block;
+    background-color: rgb(23, 189, 23);
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 8px 30px;
+    border-radius: 7px;
+    font-weight: bolder;
+    font-size: 1em;
+    text-decoration: none;
+    margin: 10px auto;
+}
+
+#ticTacToeButton:hover {
+    transition: transform 0.2s;
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#ticTacToeButton:active {
+    background-color: red;
+}
+
+@media(max-width: 880px) {
+    #heading {
+        font-size: 40px;
+
+    }
+}
+
+@media(max-width: 670px) {
+    #heading {
+        font-size: 30px;
+    }
+
+    #gameLists {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #ticTacToe {
+        width: 80%;
+    }
+}
+
+@media(max-width: 510px) {
+    #heading {
+        font-size: 25px;
+    }
+
+    #ticTacToeButton {
+        font-size: 0.9em;
+    }
+}
+
+@media(max-width: 390px) {
+    #heading {
+        font-size: 20px;
+    }
+}

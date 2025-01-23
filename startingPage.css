@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("mainPage/assets/images/appBackground.png");
+    background-size: cover;
+    background-attachment: scroll;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+#mainContent {
+    text-align: center;
+    background-color: #FEF8DD;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 67%;
+}
+
+#playGameButton {
+    display: inline-block;
+    background-color: rgb(23, 179, 23);
+    color: white;
+    padding: 13px 35px;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: bolder;
+
+}
+
+#playGameButton:hover {
+    transition: transform 0.2s;
+    transform: scale(1.2);
+    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+#playGameButton:active {
+    background-color: red;
+}
+
+@media (max-width: 850px) {
+    #mainContent {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 745px) {
+    #mainContent {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 645px) {
+    #mainContent {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 530px) {
+    #mainContent {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 435px) {
+    #mainContent {
+        font-size: 6px;
+    }
+}
+
+@media (max-width: 350px) {
+    #mainContent {
+        font-size: 3px;
+    }
+}

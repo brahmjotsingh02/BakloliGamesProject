@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="tic-tac-toe.css">
+</head>
+
+<body>
+    <div id="gameContainer">
+        <h1 class="infoText">Tic Tac Toe</h1>
+        <div id="cellContainer">
+            <div cellIndex="0" class="cell"></div>
+            <div cellIndex="1" class="cell"></div>
+            <div cellIndex="2" class="cell"></div>
+            <div cellIndex="3" class="cell"></div>
+            <div cellIndex="4" class="cell"></div>
+            <div cellIndex="5" class="cell"></div>
+            <div cellIndex="6" class="cell"></div>
+            <div cellIndex="7" class="cell"></div>
+            <div cellIndex="8" class="cell"></div>
+        </div>
+
+        <h2 id="statusText" class="infoText"></h2>
+        <h3 id="totalRoundStatus" class="infoText"></h3>
+        <h3 id="roundStatus" class="infoText">Round 1</h3>
+        <h3 id="scoreText" class="infoText">0-0</h3>
+        <h3 id="wonStatus" class="infoText"></h3>
+
+        <div>
+            <button class="disabled" id="nextRoundBtn" disabled>Next Round</button>
+        </div>
+
+        <br>
+        <br>
+
+        <div id="btnGroup">
+            <div class="btnContainer">
+                <p class="btnInfo infoText">IF YOU WANT TO RESTART THE MATCH WITH SAME NAME AND SAME NO OF ROUNDS.</p>
+                <button class="btn" id="restartBtn">CLICK HERE</button>
+            </div>
+
+            <div class="btnContainer">
+                <p class="btnInfo infoText">IF YOU WANT TO RESTART THE MATCH AND ALSO CHANGE THE NAMES, TOTAL ROUNDS.
+                </p>
+                <button class="btn" id="restartFullBtn">CLICK HERE</button>
+            </div>
+
+            <div class="btnContainer">
+                <p class="btnInfo infoText">IF YOU WANT TO RESTART THE MATCH AND WANT TO SET TOTAL ROUNDS AGAIN.</p>
+                <button class="btn" id="restartWithChangingRounds">CLICK HERE</button>
+            </div>
+        </div>
+    </div>
+    <script src="tic-tac-toe.js"></script>
+</body>
+
+</html>
